@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en" class="ace ace-card-on ace-tab-nav-on ace-main-nav-on ace-sidebar-on" data-theme-color="#c0e3e7">
+<head th:replace="public :: head(card)">
+  </head>
+  <body>
+     <div class="ace-wrapper">
+         <header id="ace-header" class="ace-container-shift ace-logo-in ace-head-boxed ace-nav-right">
+             <div class="ace-head-inner">
+                 <div class="ace-head-container ace-container">
+                     <div class="ace-head-row">
+                         <div id="ace-head-col1" class="ace-head-col text-left">
+                             <a id="ace-logo" class="ace-logo" href="index.html">
+                                <img src="img/uploads/brand/logo.svg" alt="ace resume"><span>.Certy</span>
+                             </a>
+                         </div>
+                         
+                         <div id="ace-head-col2" class="ace-head-col text-right">
+                             <div class="ace-nav-container ace-container hidden-sm hidden-xs">
+                                 <nav id="ace-main-nav">
+                                    <ul class="clear-list">
+										<li><a href="index.html">我的简介</a></li>
+										<li><a href="portfolio.html">我的作品</a>
+										<li><a href="contact.html">信息更新</a></li>
+									</ul>
+                                 </nav>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div><!-- .ace-container -->
+             </div><!-- .ace-head-inner -->
+        </header><!-- #ace-header -->
+
+        
+        <nav id="ace-nav-sm" class="ace-nav hidden-lg hidden-md">
+            <ul class="clear-list">
+				<li>
+					<a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="img/uploads/avatar/avatar-42x42.png" alt=""></a>
+				</li>
+				<li>
+					<a href="portfolio.html" data-tooltip="References"><span class="ace-icon ace-icon-references"></span></a>
+				</li>
+				<li>
+					<a href="contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
+				</li>
+			</ul>
+        </nav><!-- #ace-tab-nav-sm -->
+
+        <article id="ace-card" class="ace-card bg-primary">
+			<div class="ace-card-inner text-center">
+				<img class="avatar avatar-195" src="img/uploads/avatar/195.jpg" width="195" height="195" alt="">
+				<h1>凌爱杰</h1>
+
+				<ul class="ace-social clear-list">
+					<li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
+					<li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
+					<li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
+					<li><a><span class="ace-icon ace-icon-instagram"></span></a></li>
+					<li><a><span class="ace-icon ace-icon-pinterest"></span></a></li>
+				</ul>
+			</div>
+
+			<footer class="ace-card-footer">
+				<a class="btn btn-lg btn-block btn-thin btn-upper " href="contact.html">更新信息</a>
+			</footer>
+		</article><!-- #ace-card -->
+
+        <div id="ace-content" class="ace-container-shift">
+            <div class="ace-container">
+
+                
+                    <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
+                        <div class="ace-nav-cont">
+                            <div id="ace-nav-scroll">
+                                <nav id="ace-nav" class="ace-nav">
+                                    <ul class="clear-list">
+										<li>
+											<a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="img/uploads/avatar/avatar-42x42.png" alt=""></a>
+										</li>									
+										
+										<li>
+											<a href="portfolio.html" data-tooltip="Portfolio"><span class="ace-icon ace-icon-portfolio"></span></a>
+										</li>
+										<li>
+											<a href="contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
+										</li>
+									</ul>
+                                </nav>
+                            </div>
+
+                            <div id="ace-nav-tools" class="hidden">
+                                <span class="ace-icon ace-icon-dots-three-horizontal"></span>
+
+                                <button id="ace-nav-arrow" class="clear-btn">
+                                    <span class="ace-icon ace-icon-chevron-thin-down"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="ace-nav-btm"></div>
+                    </div><!-- .ace-nav-wrap -->
+
+                <div class="ace-paper-stock">
+                    <main class="ace-paper clearfix">
+                        <div class="ace-paper-cont clear-mrg">
+						
+						<!-- START: PAGE CONTENT -->
+    <div class="padd-box clear-mrg">
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-12 clear-mrg text-box">
+                    <h2 class="title-lg text-upper">自我介绍</h2>
+
+                    <p><b>您好，我叫凌爱杰！</b><br>
+                        来自安徽省池州市，就读于安徽六安皖西学院，大学主修计算机科学与技术。大学期间一边学习了C/c++语言的编程语言，一边游玩了各种类型的游戏，并对各种主流游戏拥有自己的见解和看法，热爱游戏但不沉迷游戏。对待各种事物都能拥有自己独特的看法和不同寻常的见解，并且善于独立思考。</p>
+
+                    <p class="text-right">
+                        <img src="img/uploads/signature.png" alt="">
+                    </p>
+                </div>
+            </div>
+        </section><!-- .section -->
+
+        <section class="section brd-btm">
+            <div class="row">
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">个人信息</h2>
+
+                    <dl class="dl-horizontal clear-mrg">
+                        <dt class="text-upper">姓名：</dt>
+                        <dd><span th:text="${name}"></span></dd>
+
+                        <dt class="text-upper">出生日期：</dt>
+                        <dd>1997—08-13</dd>
+
+                        <dt class="text-upper">家庭住址：</dt>
+                        <dd>安徽省池州市贵池区</dd>
+
+                        <dt class="text-upper">e-mail:</dt>
+                        <dd><a href="mailto:lingaijie1997@outlook.com"><span th:text="${e_mail}"></span></a></dd>
+
+                        <dt class="text-upper">电话号码：</dt>
+                        <dd><span th:text="${Phn}"></span></dd>
+
+                    </dl>
+                </div><!-- .col-sm-6 -->
+
+                <div class="col-sm-6 clear-mrg">
+                    <h2 class="title-thin text-muted">外语水平</h2>
+
+                    <div class="progress-bullets ace-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+                        <strong class="progress-title">English</strong>
+                        <span class="progress-bar">
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                            <span class="bullet fill"></span>
+                        </span>
+                        <span class="progress-text text-muted">四级</span>
+                    </div>
+
+
+                    <div class="progress-bullets ace-animate" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="10">
+            
+                    </div>
+                </div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+        </section><!-- .section -->
+
+        

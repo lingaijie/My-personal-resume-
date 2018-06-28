@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en" class="ace ace-card-on ace-tab-nav-on ace-main-nav-on ace-sidebar-on" data-theme-color="#c0e3e7">
+
+<head th:fragment="head(title)">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title th:text="${title}"></title>
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <!-- Icon Fonts -->
+    <link th:href="@{/fonts/icomoon/style.css}" rel="stylesheet">
+
+    <!-- Styles -->
+    <link th:href="@{/js/plugins/highlight/solarized-light.css}" rel="stylesheet">
+    <link th:href="@{/CSS/style.css}" rel="stylesheet">
+
+    <!-- Modernizer -->
+    <script type="text/javascript" th;src="@{/js/vendor/modernizr-3.3.1.min.js}"></script>
+</head>
